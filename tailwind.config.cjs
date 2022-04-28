@@ -11,10 +11,7 @@ module.exports = {
         c5: '#474551',
       },
       fontFamily:{
-        'gilroy-700' : ['Gilroy-Bold', 'sans-serif'],
-        'gilroy-600' : ['Gilroy-Semi-Bold', 'sans-serif'],
-        'gilroy-500' : ['Gilroy-Medium', 'sans-serif'],
-        'gilroy-400' : ['Gilroy-Regular', 'sans-serif'],
+        'Gilroy' : ['Gilroy', 'sans-serif'],
       }
     }
   },

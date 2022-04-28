@@ -1,25 +1,30 @@
 <script>
     export let name;
-    export let width = "1rem";
-    export let height = "1rem";
-    export let focusable = false;
+    //export let focusable = true;
     let icons = [
         {
-          box: 24,
-          name: "save",
-          svg: `<g stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></g>`
+          box: 30,
+          name: "adress",
+          svg: `
+        <path d="M10.1341 11.6875C11.5332 11.6875 12.6675 10.4563 12.6675 8.9375C12.6675 7.41872 11.5332 6.1875 10.1341 6.1875C8.73486 6.1875 7.60059 7.41872 7.60059 8.9375C7.60059 10.4563 8.73486 11.6875 10.1341 11.6875Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.4671 8.9375C16.4671 15.125 10.1335 19.9375 10.1335 19.9375C10.1335 19.9375 3.7998 15.125 3.7998 8.9375C3.7998 7.11414 4.4671 5.36545 5.65489 4.07614C6.84268 2.78683 8.45367 2.0625 10.1335 2.0625C11.8133 2.0625 13.4242 2.78683 14.612 4.07614C15.7998 5.36545 16.4671 7.11414 16.4671 8.9375V8.9375Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        `
         },
         {
-          box: 32,
-          name: "trash",
-          svg: `<path d="M12 12h2v12h-2z" /><path d="M18 12h2v12h-2z" /><path d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20z" /><path d="M12 2h8v2h-8z" />`
+          box: 30,
+          name: "clock",
+          svg: `<path d="M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z" />
+        <path d="M11 6.1875V11H15.8125"/>
+        `
         }
     ];
     let displayIcon = icons.find((e) => e.name === name);
 </script>
 <svg
   class={$$props.class}
-  {focusable}
-  {width}
-  {height}
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
   viewBox="0 0 {displayIcon.box} {displayIcon.box}">{@html displayIcon.svg}</svg>

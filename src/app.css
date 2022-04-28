@@ -3,15 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy';
     src: url("../static/fonts/Gilroy-Bold.woff");
 
-    font-family: 'Gilroy-Semi-Bold';
-    src: url("../static/fonts/Gilroy-SemiBold.woff"); 
-
-    font-family: 'Gilroy-Medium';
-    src: url("../static/fonts/Gilroy-Medium.woff");
-
-    font-family: 'Gilroy-Regular';
-    src: url("../static/fonts/Gilroy-Regular.woff");
 }
